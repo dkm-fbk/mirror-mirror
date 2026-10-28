@@ -47,3 +47,12 @@ document.querySelector('#copy-citation').addEventListener('click', async () => {
   } catch { status.textContent = 'Select and copy the BibTeX below, or download citation.bib.'; }
 });
 showCondition(0); showResults(0);
+
+const episodeSelect = document.querySelector('#episode-select');
+episodeSelect.addEventListener('change', () => {
+  const player = document.querySelector('#episode-player');
+  player.pause();
+  player.src = `assets/videos/E1_gemini25pro_${episodeSelect.value}.mp4`;
+  player.setAttribute('aria-label', `E1 Gemini 2.5 Pro: ${episodeSelect.value} episode`);
+  player.load();
+});
