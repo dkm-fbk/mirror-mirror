@@ -7,7 +7,8 @@ function showCondition(index, focus = false) {
   document.querySelector('#condition-title').textContent = condition.title;
   document.querySelector('#condition-description').textContent = condition.text;
   const image = document.querySelector('#condition-image');
-  image.src = `assets/e${index + 1}.png`;
+  image.src = `assets/e${index + 1}.webp`;
+  document.querySelector("#condition-full").href = `assets/e${index + 1}-full.png`;
   image.alt = `E${index + 1}: ${condition.title}. First-person observation from the paper's simulated environment.`;
   if (focus) tabs[index].focus();
 }

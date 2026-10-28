@@ -22,7 +22,10 @@ No build step is required. The page uses HTML, CSS, and JavaScript. Fonts are lo
 - `content.js`: experimental condition descriptions and results from the supplementary table.
 - `style.css`: responsive layout and glass appearance.
 - `app.js`: experiment tabs, result selection, citation copying.
-- `assets/`: original paper figures and PDF.
+- `assets/`: original paper figures, chart PDFs, manuscript, and 8K environment images. Optimized WebP images are used for the experiment tabs; clicking them opens the original PNG.
+- Complementary analyses: radar profiles, normalized metric heatmap, action–attribution scatter, completion gap, and E5 final outcomes.
 - `citation.bib`: downloadable BibTeX.
 
 The results table reproduces eight primary models, with mean and standard error. Additional Cosmos-Reason2 results are in the paper. Text and figures are from the accompanying manuscript.
+
+Published project page: https://dkm-fbk.github.io/mirror-mirror/
